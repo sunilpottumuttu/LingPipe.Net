@@ -10,7 +10,7 @@ namespace LingPipeOnDotNetDemos
     {
         static void Main(string[] args)
         {
-            UnitTest1 ut1 = new UnitTest1();
+            Example1 ut1 = new Example1();
             ut1.Run();
 
 

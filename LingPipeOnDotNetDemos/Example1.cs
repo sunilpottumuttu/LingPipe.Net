@@ -12,7 +12,7 @@ using java.io;
 
 namespace LingPipeOnDotNetDemos
 {
-    public class UnitTest1
+    public class Example1
     {
         public void Run()
         {
