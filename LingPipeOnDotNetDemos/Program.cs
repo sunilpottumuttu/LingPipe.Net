@@ -18,8 +18,8 @@ namespace LingPipeOnDotNetDemos
             Chapter1.Example1 c1e1 = new Chapter1.Example1();
             c1e1.Run();
 
-            //Chapter1.Example2 c1e2 = new Chapter1.Example2();
-            //c1e2.Run();
+            Chapter1.Example2 c1e2 = new Chapter1.Example2();
+            c1e2.Run();
 
             Chapter1.Example3 c1e3 = new Chapter1.Example3();
             c1e3.Run();
