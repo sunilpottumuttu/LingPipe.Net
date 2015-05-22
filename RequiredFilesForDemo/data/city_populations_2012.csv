@@ -1,0 +1,290 @@
+City,State,2012_estimate
+New York,New York,8336697
+Los Angeles,California,3857799
+Chicago,Illinois,2714856
+Houston,Texas,2160821
+Philadelphia,Pennsylvania,1547607
+Phoenix,Arizona,1488750
+San Antonio,Texas,1382951
+San Diego,California,1338348
+Dallas,Texas,1241162
+San Jose,California,982765
+Austin,Texas,842592
+Jacksonville,Florida,836507
+Indianapolis,Indiana,834852
+San Francisco,California,825863
+Columbus,Ohio,809798
+Fort Worth,Texas,777992
+Charlotte,North Carolina,775202
+Detroit,Michigan,701475
+El Paso,Texas,672538
+Memphis,Tennessee,655155
+Boston,Massachusetts,636479
+Seattle,Washington,634535
+Denver,Colorado,634265
+Washington,District of Columbia,632323
+Nashville,Tennessee,624496
+Baltimore,Maryland,621342
+Louisville,Kentucky,605110
+Portland,Oregon,603106
+Oklahoma City,Oklahoma,599199
+Milwaukee,Wisconsin,598916
+Las Vegas,Nevada,596424
+Albuquerque,New Mexico,555417
+Tucson,Arizona,524295
+Fresno,California,505882
+Sacramento,California,475516
+Long Beach,California,467892
+Kansas City,Missouri,464310
+Mesa,Arizona,452084
+Virginia Beach,Virginia,447021
+Atlanta,Georgia,443775
+Colorado Springs,Colorado,431834
+Raleigh,North Carolina,423179
+Omaha,Nebraska,421570
+Miami,Florida,413892
+Oakland,California,400740
+Tulsa,Oklahoma,393987
+Minneapolis,Minnesota,392880
+Cleveland,Ohio,390928
+Wichita,Kansas,385577
+Arlington,Texas,375600
+New Orleans,Louisiana,369250
+Bakersfield,California,358597
+Tampa,Florida,347645
+Honolulu,Hawai'i,345610
+Anaheim,California,343248
+Aurora,Colorado,339030
+Santa Ana,California,330920
+St. Louis,Missouri,318172
+Riverside,California,313673
+Corpus Christi,Texas,312195
+Pittsburgh,Pennsylvania,306211
+Lexington,Kentucky,305489
+Anchorage,Alaska,298610
+Stockton,California,297984
+Cincinnati,Ohio,296550
+Saint Paul,Minnesota,290770
+Toledo,Ohio,284012
+Newark,New Jersey,277727
+Greensboro,North Carolina,277080
+Plano,Texas,272068
+Henderson,Nevada,265679
+Lincoln,Nebraska,265404
+Buffalo,New York,259384
+Fort Wayne,Indiana,254555
+Jersey City,New Jersey,254441
+Chula Vista,California,252422
+Orlando,Florida,249562
+St. Petersburg,Florida,246541
+Norfolk,Virginia,245782
+Chandler,Arizona,245628
+Laredo,Texas,244731
+Madison,Wisconsin,240323
+Durham,North Carolina,239358
+Lubbock,Texas,236065
+Winston–Salem,North Carolina,234349
+Garland,Texas,233564
+Glendale,Arizona,232143
+Hialeah,Florida,231941
+Reno,Nevada,231027
+Baton Rouge,Louisiana,230058
+Irvine,California,229985
+Chesapeake,Virginia,228417
+Irving,Texas,225427
+Scottsdale,Arizona,223514
+North Las Vegas,Nevada,223491
+Fremont,California,221986
+Gilbert,Arizona,221140
+San Bernardino,California,213295
+Boise,Idaho,212303
+Birmingham,Alabama,212038
+Rochester,New York,210532
+Richmond,Virginia,210309
+Spokane,Washington,209525
+Des Moines,Iowa,206688
+Montgomery,Alabama,205293
+Modesto,California,203547
+Fayetteville,North Carolina,202103
+Tacoma,Washington,202010
+Shreveport,Louisiana,201867
+Fontana,California,201812
+Oxnard,California,201555
+Aurora,Illinois,199932
+Moreno Valley,California,199552
+Akron,Ohio,198549
+Yonkers,New York,198449
+Columbus,Georgia,198413
+Augusta,Georgia,197872
+Little Rock,Arkansas,196537
+Amarillo,Texas,195250
+Mobile,Alabama,194822
+Huntington Beach,California,194708
+Glendale,California,194478
+Grand Rapids,Michigan,190411
+Salt Lake City,Utah,189314
+Tallahassee,Florida,186971
+Huntsville,Alabama,183739
+Worcester,Massachusetts,182669
+Knoxville,Tennessee,182200
+Grand Prairie,Texas,181824
+Newport News,Virginia,180726
+Brownsville,Texas,180097
+Santa Clarita,California,179013
+Overland Park,Kansas,178919
+Providence,Rhode Island,178432
+Jackson,Mississippi,175437
+Garden Grove,California,174389
+Oceanside,California,171293
+Chattanooga,Tennessee,171279
+Fort Lauderdale,Florida,170747
+Rancho Cucamonga,California,170746
+Santa Rosa,California,170685
+Port St. Lucie,Florida,168716
+Ontario,California,167211
+Tempe,Arizona,166842
+Vancouver,Washington,165489
+Springfield,Missouri,162191
+Cape Coral,Florida,161248
+Pembroke Pines,Florida,160306
+Sioux Falls,South Dakota,159908
+Peoria,Arizona,159789
+Lancaster,California,159055
+Elk Grove,California,159038
+Corona,California,158391
+Eugene,Oregon,157986
+Salem,Oregon,157429
+Palmdale,California,155650
+Salinas,California,154484
+Springfield,Massachusetts,153552
+Pasadena,Texas,152272
+Rockford,Illinois,150843
+Pomona,California,150812
+Hayward,California,149392
+Fort Collins,Colorado,148612
+Joliet,Illinois,148268
+Escondido,California,147575
+Kansas City,Kansas,147268
+Torrance,California,147027
+Bridgeport,Connecticut,146425
+Alexandria,Virginia,146294
+Sunnyvale,California,146197
+Cary,North Carolina,145693
+Lakewood,Colorado,145516
+Hollywood,Florida,145236
+Paterson,New Jersey,145219
+Syracuse,New York,144170
+Naperville,Illinois,143684
+McKinney,Texas,143223
+Mesquite,Texas,143195
+Clarksville,Tennessee,142519
+Savannah,Georgia,142022
+Dayton,Ohio,141359
+Orange,California,139419
+Fullerton,California,138574
+Pasadena,California,138547
+Hampton,Virginia,136836
+McAllen,Texas,134719
+Killeen,Texas,134654
+Warren,Michigan,134141
+West Valley City,Utah,132434
+Columbia,South Carolina,131686
+New Haven,Connecticut,130741
+Sterling Heights,Michigan,130410
+Olathe,Kansas,130045
+Miramar,Florida,128729
+Thousand Oaks,California,128412
+Frisco,Texas,128176
+Cedar Rapids,Iowa,128119
+Topeka,Kansas,127939
+Visalia,California,127081
+Waco,Texas,127018
+Elizabeth,New Jersey,126458
+Bellevue,Washington,126439
+Gainesville,Florida,126047
+Simi Valley,California,125793
+Charleston,South Carolina,125583
+Carrollton,Texas,125409
+Coral Springs,Florida,125287
+Stamford,Connecticut,125109
+Hartford,Connecticut,124893
+Concord,California,124711
+Roseville,California,124519
+Thornton,Colorado,124140
+Kent,Washington,122999
+Lafayette,Louisiana,122761
+Surprise,Arizona,121287
+Denton,Texas,121123
+Victorville,California,120336
+Evansville,Indiana,120235
+Midland,Texas,119385
+Santa Clara,California,119311
+Athens,Georgia,118999
+Allentown,Pennsylvania,118974
+Abilene,Texas,118887
+Beaumont,Texas,118228
+Vallejo,California,117796
+Independence,Missouri,117270
+Springfield,Illinois,117126
+Ann Arbor,Michigan,116121
+Provo,Utah,115919
+Peoria,Illinois,115687
+Norman,Oklahoma,115562
+Berkeley,California,115403
+El Monte,California,115111
+Murfreesboro,Tennessee,114038
+Lansing,Michigan,113996
+Columbia,Missouri,113225
+Downey,California,112873
+Costa Mesa,California,111918
+Inglewood,California,111182
+Miami Gardens,Florida,110754
+Manchester,New Hampshire,110209
+Elgin,Illinois,109927
+Wilmington,North Carolina,109922
+Waterbury,Connecticut,109915
+Fargo,North Dakota,109779
+Arvada,Colorado,109745
+Carlsbad,California,109318
+Westminster,Colorado,109169
+Rochester,Minnesota,108992
+Gresham,Oregon,108956
+Clearwater,Florida,108732
+Lowell,Massachusetts,108522
+West Jordan,Utah,108383
+Pueblo,Colorado,107772
+San Buenaventura (Ventura),California,107734
+Fairfield,California,107684
+West Covina,California,107440
+Billings,Montana,106954
+Murrieta,California,106810
+High Point,North Carolina,106586
+Round Rock,Texas,106573
+Richmond,California,106516
+Cambridge,Massachusetts,106471
+Norwalk,California,106278
+Odessa,Texas,106102
+Antioch,California,105508
+Temecula,California,105208
+Green Bay,Wisconsin,104868
+Everett,Washington,104655
+Wichita Falls,Texas,104552
+Burbank,California,104391
+Palm Bay,Florida,104124
+Centennial,Colorado,103743
+Daly City,California,103690
+Richardson,Texas,103297
+Pompano Beach,Florida,102984
+Broken Arrow,Oklahoma,102019
+North Charleston,South Carolina,101989
+West Palm Beach,Florida,101903
+Boulder,Colorado,101808
+Rialto,California,101740
+Santa Maria,California,101459
+El Cajon,California,101435
+Davenport,Iowa,101363
+Erie,Pennsylvania,101047
+Las Cruces,New Mexico,101047
+South Bend,Indiana,100800
+Flint,Michigan,100515
+Kenosha,Wisconsin,100150

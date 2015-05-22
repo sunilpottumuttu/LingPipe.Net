@@ -17,7 +17,7 @@ namespace LingPipeOnDotNetDemos.Chapter1
     {
         public void Run()
         {
-            string inputPath = "cookbook/data/disney.csv";
+            string inputPath = "data/disney.csv";
             string classifierPath = "cookbook/models/3LangId.LMClassifier";
             File serializedClassifier = new File(classifierPath);
 #pragma warning disable

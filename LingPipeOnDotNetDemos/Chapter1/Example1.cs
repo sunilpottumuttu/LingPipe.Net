@@ -16,7 +16,7 @@ namespace LingPipeOnDotNetDemos.Chapter1
     {
         public void Run()
         {
-            string classifierPath = "cookbook/models/3LangId.LMClassifier";
+            string classifierPath = Util.GetRequiredFilesDirectory() + "models/3LangId.LMClassifier";
             clrsystem.Console.WriteLine("Loading " + classifierPath);
             File serializedClassifier = new File(classifierPath);
 #pragma warning disable

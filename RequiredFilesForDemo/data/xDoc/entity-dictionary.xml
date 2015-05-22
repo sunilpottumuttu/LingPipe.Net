@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dictionary PUBLIC "alias-i-entity-dictionary" "data/xDoc/entity-dictionary.dtd">
+<dictionary>
+
+<entity canonical="George W. Bush" id="1012" speculativeAliases="0" type="MALE">
+  <alias xdc="1">Bush 2</alias>
+  <alias xdc="1">George Walker Bush</alias>
+  <alias xdc="1">George W Bush</alias>
+ <alias xdc="1">George W Bush Jr.</alias>
+  <alias xdc="1">George Bush</alias>
+<alias xdc="1">Dubya</alias>
+  <alias xdc="0">Bush</alias>
+</entity>
+
+<entity canonical="George H. W. Bush" id="1014" speculativeAliases="0" type="MALE">
+  <alias xdc="1">Bush 1</alias>
+  <alias xdc="1">George Herbert Walker Bush</alias>
+  <alias xdc="1">George H W Bush</alias>
+  <alias xdc="1">George H.W. Bush</alias>
+  <alias xdc="1">George HW Bush</alias>
+  <alias xdc="1">George Bush</alias>
+  <alias xdc="0">Bush</alias>
+</entity>
+
+<stoplist>
+  <phrase>A</phrase>
+  <phrase>Finally</phrase>
+</stoplist>
+
+</dictionary>

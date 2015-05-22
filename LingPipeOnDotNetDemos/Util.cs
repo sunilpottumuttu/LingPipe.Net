@@ -11,6 +11,13 @@ namespace LingPipeOnDotNetDemos
     public class Util
     {
 
+        public static string GetRequiredFilesDirectory()
+        {
+            string AssemblyPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            return AssemblyPath + @"/../../../RequiredFilesForDemo/";
+        }
+
+
         public static Classification consoleInputPrintClassification(BaseClassifier classifier, string input)
         {
             Classification classification = classifier.classify(input);

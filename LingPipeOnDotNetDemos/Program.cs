@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace LingPipeOnDotNetDemos
@@ -10,11 +11,12 @@ namespace LingPipeOnDotNetDemos
     {
         static void Main(string[] args)
         {
+         
             Console.WindowWidth = 150;
             Console.WindowHeight = 50;
 
-            //Chapter1.Example1 c1e1 = new Chapter1.Example1();
-            //c1e1.Run();
+            Chapter1.Example1 c1e1 = new Chapter1.Example1();
+            c1e1.Run();
 
             //Chapter1.Example2 c1e2 = new Chapter1.Example2();
             //c1e2.Run();

@@ -16,7 +16,7 @@ namespace LingPipeOnDotNetDemos.Chapter1
     {
         public void Run()
         {
-            string classifierPath = "cookbook/models/3LangId.LMClassifier";
+            string classifierPath = "models/3LangId.LMClassifier";
 #pragma warning disable
             JointClassifier classifier = (JointClassifier)AbstractExternalizable.readObject(new File(classifierPath));
 #pragma warning restore

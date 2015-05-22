@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE dictionary PUBLIC "alias-i-entity-dictionary" "http://www.alias-i.com/dtd/entity-dictionary.dtd">
+<dictionary>
+
+<entity canonical="Breck Baldwin" id="1" speculativeAliases="0" type="MALE">
+  <alias xdc="1">Breck Baldwin</alias>
+  <alias xdc="1">Breckles</alias>
+  <alias xdc="0">Breck</alias>
+</entity>
+
+<entity canonical="Krishna Dayanidhi" id="2" speculativeAliases="0" type="MALE">
+  <alias xdc="1">Krishna Dayanidhi</alias>
+  <alias xdc="1">K-Dog</alias>
+  <alias xdc="0">Krishna</alias>
+ 
+</entity>
+
+<stoplist>
+  <phrase>A</phrase>
+  <phrase>Finally</phrase>
+</stoplist>
+
+</dictionary>
