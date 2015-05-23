@@ -129,6 +129,7 @@
     <Compile Include="Chapter1\Example2.cs" />
     <Compile Include="Chapter1\Example3.cs" />
     <Compile Include="Chapter1\Example4.cs" />
+    <Compile Include="Chapter1\Example5.cs" />
     <Compile Include="Chapter2\Example1.cs" />
     <Compile Include="Chapter2\Example2.cs" />
     <Compile Include="Chapter2\Example3.cs" />
