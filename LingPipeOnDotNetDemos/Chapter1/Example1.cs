@@ -9,9 +9,7 @@ using java.io;
 
 namespace LingPipeOnDotNetDemos.Chapter1
 {
-    /// <summary>
-    /// 
-    /// </summary>
+   
     [System.ComponentModel.Description("Deserializing and running a classifier")]
     public class Example1
     {

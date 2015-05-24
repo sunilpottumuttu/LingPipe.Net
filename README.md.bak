@@ -17,7 +17,7 @@ ikvmc.exe -target:library -assembly:lingpipe-app -classloader:ikvm.runtime.AppDo
 1. IKVM - IKVM Runtime Used to Generate .NET Assembly
 2. Lib - Generated .NET Assembly and the version of Jar file used 
 3. LingPipeOnDotNetDemos - Visual studio solution containing Examples 
-4. RequiredFilesForDemo - Files Required(data/models) to Run the Visual studio solution	
+4. RequiredFilesForDemo - Files Required to Run the Demo	
 
 ##Demo Application##
 
