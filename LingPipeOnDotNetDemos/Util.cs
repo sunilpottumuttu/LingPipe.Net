@@ -5,11 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using com.aliasi.classify;
 using java.io;
+using clrio= System.IO;
 
 namespace LingPipeOnDotNetDemos
 {
     public class Util
     {
+
+        public static int SCORE = 0;
+        public static int GUESSED_CLASS = 1;
+        public static int ANNOTATION_OFFSET = 2;
+        public static int TEXT_OFFSET = 3;
+
 
         public static string GetRequiredFilesDirectory()
         {
@@ -39,6 +46,43 @@ namespace LingPipeOnDotNetDemos
                 clrsystem.Console.WriteLine("Best Category: " + classification.bestCategory());
             }
         }
+
+
+        public static List<string[]> readAnnotatedCsvRemoveHeader(string inputPath)
+        {
+            List<string[]> rows = new List<string[]>();
+            using (CsvFileReader reader = new CsvFileReader(inputPath))
+            {
+                CsvRow row = new CsvRow();
+                reader.ReadLine(); //skip first row
+                while (reader.ReadRow(row))
+                {
+                    if (row[ANNOTATION_OFFSET].Equals(""))
+                    { continue; }
+
+                    rows.Add(row.ToArray());
+                }
+            }
+            return rows;
+        }
+
+        public static string[] getCategories(List<string[]> data)
+        {
+            //get categories
+            HashSet<string> categories = new HashSet<string>();
+            foreach (var item in data)
+            {
+                if (!item[Util.ANNOTATION_OFFSET].Equals(""))
+                {
+                    string s = item[ANNOTATION_OFFSET];
+                    categories.Add(s);
+                }
+            }
+            return categories.ToArray();
+        }
+
+
+        
 
         
 

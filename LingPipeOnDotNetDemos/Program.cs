@@ -14,6 +14,7 @@ namespace LingPipeOnDotNetDemos
          
             Console.WindowWidth = 150;
             Console.WindowHeight = 50;
+            
 
             //Chapter1.Example1 c1e1 = new Chapter1.Example1();
             //c1e1.Run();
@@ -26,6 +27,9 @@ namespace LingPipeOnDotNetDemos
 
             Chapter1.Example4 c1e4 = new Chapter1.Example4();
             c1e4.Run();
+
+            //Chapter1.Example5 c1e5 = new Chapter1.Example5();
+            //c1e5.Run();
 
             //Chapter2.Example1 c2e1 = new Chapter2.Example1();
             //c2e1.Run();

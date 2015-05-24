@@ -23,25 +23,17 @@ namespace LingPipeOnDotNetDemos.Chapter1
 #pragma warning disable
             BaseClassifier classifier = (BaseClassifier)AbstractExternalizable.readObject(serializedClassifier);
 #pragma warning restore
-            //read the csv file by skipping the top row(header)
-            //and get the rows that has some value in 'TRUTH' column
-            List<CSV> csvList = clrio.File.ReadAllLines(inputPath)
-                .ToList()
-                .Skip(1)
-                .Select(line => line.Split(','))
-                .Where(r => r[2].ToString() != "")
-                .Select(r => new CSV() { SCORE = r[0], GUESS = r[1], TRUTH = r[2], TEXT = r[3] }).ToList<CSV>();
 
-            //baseclassifierevaluator expects string array
-            string[] categories = csvList.Select(i => i.TRUTH).ToArray<string>();
-
+            List<string[]> rows = Util.readAnnotatedCsvRemoveHeader(inputPath);
+            string[] categories = Util.getCategories(rows);
+            
             bool storeInputs = false;
             BaseClassifierEvaluator evaluator = new BaseClassifierEvaluator(classifier, categories, storeInputs);
 
-            foreach (var item in csvList)
+            foreach (var row in rows)
             {
-                string truth = item.TRUTH;
-                string text = item.TEXT;
+                string truth = row[Util.ANNOTATION_OFFSET];
+                string text = row[Util.TEXT_OFFSET];
                 Classification classification = new Classification(truth);
                 Classified classified = new Classified(text, classification);
                 evaluator.handle(classified);
