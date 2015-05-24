@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
+using System.Reflection;
 
 namespace LingPipeOnDotNetDemos
 {
@@ -14,43 +15,43 @@ namespace LingPipeOnDotNetDemos
          
             Console.WindowWidth = 150;
             Console.WindowHeight = 50;
-            
 
-            //Chapter1.Example1 c1e1 = new Chapter1.Example1();
-            //c1e1.Run();
+            string[] lstNameSpaces = new string[]
+            {
+                "LingPipeOnDotNetDemos.Chapter1",
+                 "LingPipeOnDotNetDemos.Chapter2"
+            };
 
-            //Chapter1.Example2 c1e2 = new Chapter1.Example2();
-            //c1e2.Run();
+            Console.WriteLine("Getting List of Classes.....");
 
-            //Chapter1.Example3 c1e3 = new Chapter1.Example3();
-            //c1e3.Run();
+            var listOfClasses = Assembly.GetExecutingAssembly()
+                .GetTypes()
+                .ToList()
+                .Where(t => lstNameSpaces.Contains(t.Namespace))
+                .Select((x, index) => new
+                {
+                    SNo = index + 1
+                    ,Details= x                      
+                })
+                .ToList();
 
-            Chapter1.Example4 c1e4 = new Chapter1.Example4();
-            c1e4.Run();
+            foreach (var item in listOfClasses)
+            {
+                Console.WriteLine(item.SNo.ToString() + "."+ item.Details.Namespace + "  " + item.Details.Name);
+            }
+            for (; ; )
+            {
+                Console.WriteLine("\nEnter the SNo To Execute(Ctrl+c To Exit):-");
+                string inputSno = Console.ReadLine();
+                var filtered = listOfClasses.Where((i) => (i.SNo.ToString() == inputSno)).First();
 
-            //Chapter1.Example5 c1e5 = new Chapter1.Example5();
-            //c1e5.Run();
+                Object obj = Assembly.GetExecutingAssembly().CreateInstance(filtered.Details.Namespace + "." + filtered.Details.Name);
+                MethodInfo runMethod = obj.GetType().GetMethod("Run");
+                runMethod.Invoke(obj, null);
 
-            //Chapter2.Example1 c2e1 = new Chapter2.Example1();
-            //c2e1.Run();
-
-            //Chapter2.Example2 c2e2 = new Chapter2.Example2();
-            //c2e2.Run();
-
-            //Chapter2.Example3 c2e3 = new Chapter2.Example3();
-            //c2e3.Run();
-
-
-            //Chapter2.Example4 c2e4 = new Chapter2.Example4();
-            //c2e4.Run();
-
-
-            //Chapter2.Example5 c2e5 = new Chapter2.Example5();
-            //c2e5.Run();
-
-
-            Console.ReadLine();
-
+                Console.WriteLine("Finished Executing........ ");
+                Console.ReadLine();
+            }
 
         }
     }

@@ -47,7 +47,25 @@ namespace LingPipeOnDotNetDemos
             }
         }
 
+        public static List<string[]> readCsvRemoveHeader(string inputPath)
+        {
+            List<string[]> rows = new List<string[]>();
+            using (CsvFileReader reader = new CsvFileReader(inputPath))
+            {
+                CsvRow row = new CsvRow();
+                reader.ReadLine(); //skip first row
+                while (reader.ReadRow(row))
+                {
+                    if (row[TEXT_OFFSET] == null || row[TEXT_OFFSET].Equals(""))
+                    {
+                        continue;
+                    }
 
+                    rows.Add(row.ToArray());
+                }
+            }
+            return rows;
+        }
         public static List<string[]> readAnnotatedCsvRemoveHeader(string inputPath)
         {
             List<string[]> rows = new List<string[]>();

@@ -23,13 +23,13 @@ namespace LingPipeOnDotNetDemos.Chapter1
 #pragma warning disable
             BaseClassifier classifier = (BaseClassifier)AbstractExternalizable.readObject(serializedClassifier);
 #pragma warning restore
-            List<string> lines = clrio.File.ReadAllLines(inputPath).ToList().Skip(1).ToList();
+            List<string[]> lines = Util.readCsvRemoveHeader(inputPath);//clrio.File.ReadAllLines(inputPath).ToList().Skip(1).ToList();
 
-            foreach (string line in lines)
+            foreach (string[] line in lines)
             {
-                string tweet = line.Split(new char[] { ','})[3];
-                Classification classification = Util.consoleInputPrintClassification(classifier, line);
-                clrsystem.Console.WriteLine("input text:- " + tweet);
+                string text = line[Util.TEXT_OFFSET];
+                Classification classification = classifier.classify(text);
+                clrsystem.Console.WriteLine("input text:- " + text);
                 clrsystem.Console.WriteLine("best classified language :-" + classification.bestCategory());
             }
         }

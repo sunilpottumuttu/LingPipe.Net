@@ -62,21 +62,6 @@ namespace LingPipeOnDotNetDemos.Chapter1
 			    }
 		    }
             clrsystem.Console.WriteLine(sb.ToString());
-
-
-
-
-
         }
-
-        public class CSV
-        {
-            public string SCORE { get; set; }
-            public string GUESS { get; set; }
-            public string TRUTH { get; set; }
-            public string TEXT { get; set; }
-        }
-
-
     }
 }

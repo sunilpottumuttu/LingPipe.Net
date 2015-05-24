@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using com.aliasi.tokenizer;
 using java.util;
 
-namespace LingPipeOnDotNetDemos.Chapter2
+namespace LingPipeOnDotNetDemos.ExampleSet2
 {
     public class Example3
     {

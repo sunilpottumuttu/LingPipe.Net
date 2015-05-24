@@ -35,7 +35,6 @@ namespace LingPipeOnDotNetDemos.Chapter1
                 clrsystem.Console.WriteLine(classification.bestCategory());
             }
 
-
             string spanishSentence = "la lluvia en España cae principalmente en el llano.";
             {
                 Classification classification = Util.consoleInputPrintClassification(classifier, spanishSentence);
