@@ -7,44 +7,9 @@ using com.aliasi.tokenizer;
 
 namespace LingPipeOnDotNetDemos.Chapter2
 {
-    /// <summary>
-    /// Modifying tokenizer factories
-    /// </summary>
+    [System.ComponentModel.Description("Modifying tokenizer factories")]        
     public class Example4
     {
-        public class Rot13TokenizerFactory : ModifyTokenTokenizerFactory
-        {
-            public Rot13TokenizerFactory(TokenizerFactory f)
-                : base(f)
-            {
-            }
-
-            public override string modifyToken(string token)
-            {
-                return rot13(token);
-            }
-
-            public string rot13(string input)
-            {
-                StringBuilder sb = new StringBuilder();
-                for (int i = 0; i < input.Length; i++)
-                {
-                    char c = input[i];
-                    if (c >= 'a' && c <= 'm')
-                    { c += (char)13; }
-                    else if (c >= 'A' && c <= 'M')
-                    { c += (char)13; }
-                    else if (c >= 'n' && c <= 'z')
-                    { c -= (char)13; }
-                    else if (c >= 'N' && c <= 'Z')
-                    { c -= (char)13; }
-                    sb.Append(c);
-                }
-                return sb.ToString();
-            }
-
-        }
-
         public void Run()
         {
             TokenizerFactory tokFactory = IndoEuropeanTokenizerFactory.INSTANCE;
@@ -66,6 +31,38 @@ namespace LingPipeOnDotNetDemos.Chapter2
         }
     }
 
+    public class Rot13TokenizerFactory : ModifyTokenTokenizerFactory
+    {
+        public Rot13TokenizerFactory(TokenizerFactory f)
+            : base(f)
+        {
+        }
+
+        public override string modifyToken(string token)
+        {
+            return rot13(token);
+        }
+
+        public string rot13(string input)
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < input.Length; i++)
+            {
+                char c = input[i];
+                if (c >= 'a' && c <= 'm')
+                { c += (char)13; }
+                else if (c >= 'A' && c <= 'M')
+                { c += (char)13; }
+                else if (c >= 'n' && c <= 'z')
+                { c -= (char)13; }
+                else if (c >= 'N' && c <= 'Z')
+                { c -= (char)13; }
+                sb.Append(c);
+            }
+            return sb.ToString();
+        }
+
+    }
 
     
 }

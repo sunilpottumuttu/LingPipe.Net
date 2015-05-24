@@ -7,9 +7,7 @@ using com.aliasi.tokenizer;
 
 namespace LingPipeOnDotNetDemos.Chapter2
 {
-    /// <summary>
-    /// Introduction to tokenizer factories – finding words in a character stream
-    /// </summary>
+    [System.ComponentModel.Description("Introduction to tokenizer factories – finding words in a character stream")]        
     public class Example1
     {
         public void Run()

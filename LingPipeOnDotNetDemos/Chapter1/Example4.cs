@@ -10,9 +10,7 @@ using java.io;
 
 namespace LingPipeOnDotNetDemos.Chapter1
 {
-    /// <summary>
-    /// Evaluation of classifiers – the confusion matrix
-    /// </summary>
+    [System.ComponentModel.Description("Evaluation of classifiers – the confusion matrix")]
     public class Example4
     {
         public void Run()

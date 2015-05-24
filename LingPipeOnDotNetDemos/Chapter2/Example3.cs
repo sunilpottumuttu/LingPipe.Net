@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 using com.aliasi.tokenizer;
 using java.util;
 
-namespace LingPipeOnDotNetDemos.ExampleSet2
+namespace LingPipeOnDotNetDemos.Chapter2
 {
+    [System.ComponentModel.Description("Combining tokenizers – stop word tokenizers")]        
     public class Example3
     {
-        /// <summary>
-        /// Combining tokenizers – stop word tokenizers
-        /// </summary>
         public void Run()
         {
             var input = "the quick brown fox is jumping";

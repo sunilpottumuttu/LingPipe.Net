@@ -10,9 +10,7 @@ using java.io;
 
 namespace LingPipeOnDotNetDemos.Chapter1
 {
-    /// <summary>
-    /// Applying a classifier to a .csv file
-    /// </summary>
+    [System.ComponentModel.Description("Applying a classifier to a .csv file")]
     public class Example3
     {
         public void Run()

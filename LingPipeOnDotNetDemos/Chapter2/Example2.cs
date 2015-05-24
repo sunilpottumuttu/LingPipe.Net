@@ -7,9 +7,7 @@ using com.aliasi.tokenizer;
 
 namespace LingPipeOnDotNetDemos.Chapter2
 {
-    /// <summary>
-    /// Combining tokenizers – lowercase tokenizer
-    /// </summary>
+    [System.ComponentModel.Description("Combining tokenizers – lowercase tokenizer")]        
     public class Example2
     {
         public void Run()

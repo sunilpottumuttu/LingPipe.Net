@@ -8,9 +8,7 @@ using com.aliasi.spell;
 
 namespace LingPipeOnDotNetDemos.Chapter2
 {
-    /// <summary>
-    /// Finding words for languages without white spaces
-    /// </summary>
+    [System.ComponentModel.Description("Finding words for languages without white spaces")]      
     public class Example5
     {
         public void Run()

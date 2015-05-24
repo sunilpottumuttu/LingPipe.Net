@@ -25,10 +25,10 @@ namespace LingPipeOnDotNetDemos
         }
 
 
-        public static Classification consoleInputPrintClassification(BaseClassifier classifier, string input)
+        public static void consoleInputPrintClassification(BaseClassifier classifier, string input)
         {
             Classification classification = classifier.classify(input);
-            return classification;
+            clrsystem.Console.WriteLine(classification);
         }
 
         public static void ConsoleInputBestCategory(BaseClassifier classifier)
@@ -42,8 +42,8 @@ namespace LingPipeOnDotNetDemos
                     return;
                 }
 
-                Classification classification = consoleInputPrintClassification(classifier, data);
-                clrsystem.Console.WriteLine("Best Category: " + classification.bestCategory());
+                Classification classification = classifier.classify(data);
+                //clrsystem.Console.WriteLine("Best Category: " + classification.bestCategory());
             }
         }
 

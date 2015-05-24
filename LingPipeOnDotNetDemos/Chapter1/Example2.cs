@@ -9,9 +9,7 @@ using java.io;
 
 namespace LingPipeOnDotNetDemos.Chapter1
 {
-    /// <summary>
-    /// Getting confidence estimates from a classifier
-    /// </summary>
+    [System.ComponentModel.Description("Getting confidence estimates from a classifier")]
     public class Example2
     {
         public void Run()
@@ -22,8 +20,8 @@ namespace LingPipeOnDotNetDemos.Chapter1
 #pragma warning restore
 
             string sentense = "The rain in Spain falls mainly on the plain.";
-            Classification  classification = Util.consoleInputPrintClassification(classifier, sentense);
-            clrsystem.Console.WriteLine(classification);
+            Util.consoleInputPrintClassification(classifier, sentense);
+            //clrsystem.Console.WriteLine(classification);
 
 
         }

@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 using System.Threading.Tasks;
 using System.Reflection;
+using System.ComponentModel;
 
 namespace LingPipeOnDotNetDemos
 {
@@ -26,18 +27,22 @@ namespace LingPipeOnDotNetDemos
 
             var listOfClasses = Assembly.GetExecutingAssembly()
                 .GetTypes()
+                .Where((type)=>type.IsDefined(typeof(DescriptionAttribute),false)) //get the classes where description attribute is defined
                 .ToList()
                 .Where(t => lstNameSpaces.Contains(t.Namespace))
                 .Select((x, index) => new
                 {
                     SNo = index + 1
-                    ,Details= x                      
+                    ,Details= x
                 })
                 .ToList();
 
             foreach (var item in listOfClasses)
             {
-                Console.WriteLine(item.SNo.ToString() + "."+ item.Details.Namespace + "  " + item.Details.Name);
+                DescriptionAttribute da = (DescriptionAttribute)item.Details.GetCustomAttribute(typeof(DescriptionAttribute));
+                string description = da.Description;
+                //Console.WriteLine(item.SNo.ToString() + "." + item.Details.Namespace + "  " + item.Details.Name + "(" + description + ")");
+                Console.WriteLine(item.SNo.ToString() + "." + description + "   (" + item.Details.Namespace + "  " + item.Details.Name + ")" );
             }
             for (; ; )
             {
