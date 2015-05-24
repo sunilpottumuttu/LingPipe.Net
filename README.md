@@ -23,3 +23,14 @@ ikvmc.exe -target:library -assembly:lingpipe-app -classloader:ikvm.runtime.AppDo
 
 I have Included Number of Examples in [Visual Studio Demo Application](https://github.com/sunilpottumuttu/LingPipe.Net/tree/master/LingPipeOnDotNetDemos)
 
+##List of Examples##
+1. Deserializing and running a classifier
+2. Getting confidence estimates from a classifier
+3. Applying a classifier to a .csv file  
+4. Evaluation of classifiers - the confusion matrix  
+5. Training your own language model classifier   
+6. Introduction to tokenizer factories - finding words in a character stream   
+7. Combining tokenizers - lowercase tokenizer   
+8. Combining tokenizers - stop word tokenizers  
+9. Modifying tokenizer factories   
+10. Finding words for languages without white spaces   
